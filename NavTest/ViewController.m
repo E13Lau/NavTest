@@ -21,12 +21,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"viewDidLoad");
     myTableView.delegate = self;
     myTableView.dataSource = self;
 //
-    myTableView.estimatedSectionHeaderHeight = 100.f;
+    myTableView.estimatedRowHeight = 100.f;
     myTableView.rowHeight = UITableViewAutomaticDimension;
-
+    
+    myTableView.estimatedSectionHeaderHeight = 100.f;
+    myTableView.sectionHeaderHeight = UITableViewAutomaticDimension;
+    
+//    myheaderView = [[HeaderView alloc]init];
+    
+//    [myheaderView setNeedsLayout];
+//    [myheaderView layoutIfNeeded];
+//    myTableView.tableHeaderView = myheaderView;
+//    myheaderView.backgroundColor = [UIColor redColor];
+//    [myTableView layoutIfNeeded];
 //    [myTableView.tableHeaderView addSubview:myheaderView];
     
 //    UIView *header = myTableView.tableHeaderView;
@@ -42,6 +53,42 @@
 //    
 //    myTableView.tableHeaderView = header;
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    NSLog(@"viewWillAppear");
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    NSLog(@"viewDidAppear");
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    NSLog(@"viewWillDisappear");
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    NSLog(@"viewDidDisappear");
+}
+
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [self sizeHeaderToFit];
+    NSLog(@"viewDidLayoutSubviews");
+}
+
+-(void)sizeHeaderToFit {
+    NSLog(@"sizeHeaderToFit");
+    UIView * headerView = myTableView.tableHeaderView;
+    
+    [headerView setNeedsLayout];
+    [headerView layoutIfNeeded];
+    
+    CGFloat height = [headerView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    CGRect frame = headerView.frame;
+    frame.size.height = height;
+    headerView.frame = frame;
+    myTableView.tableHeaderView = headerView;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,8 +115,9 @@
     return myheaderView;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return UITableViewAutomaticDimension;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    return UITableViewAutomaticDimension;
+//}
+
 
 @end

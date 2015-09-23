@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6FF0E52A-006F-473D-83F8-C56E761AF702</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NavTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E390837A558A73A6E217ABCE6D7334E0DAB85B50</key>
+		<string>https://github.com/chn-lyzhi/NavTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NavTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E390837A558A73A6E217ABCE6D7334E0DAB85B50</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chn-lyzhi/NavTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E390837A558A73A6E217ABCE6D7334E0DAB85B50</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E390837A558A73A6E217ABCE6D7334E0DAB85B50</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NavTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
