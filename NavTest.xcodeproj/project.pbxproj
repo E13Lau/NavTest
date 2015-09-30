@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		656025091BB8D630001E0B88 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656025081BB8D630001E0B88 /* View.xib */; settings = {ASSET_TAGS = (); }; };
 		65957D711BB248D40020B439 /* myTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65957D701BB248D40020B439 /* myTableViewHeaderView.m */; };
 		EFEA396D1BAF8FC5004F29B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEA396C1BAF8FC5004F29B8 /* main.m */; };
 		EFEA39701BAF8FC5004F29B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEA396F1BAF8FC5004F29B8 /* AppDelegate.m */; };
@@ -14,7 +15,6 @@
 		EFEA39761BAF8FC5004F29B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEA39741BAF8FC5004F29B8 /* Main.storyboard */; };
 		EFEA39781BAF8FC5004F29B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEA39771BAF8FC5004F29B8 /* Assets.xcassets */; };
 		EFEA39861BAF8FC5004F29B8 /* NavTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEA39851BAF8FC5004F29B8 /* NavTestTests.m */; };
-		EFEA399F1BAF9037004F29B8 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFEA399E1BAF9037004F29B8 /* HeaderView.xib */; };
 		EFEA39A21BAF9247004F29B8 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEA39A11BAF9247004F29B8 /* HeaderView.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		656025081BB8D630001E0B88 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		65957D6F1BB248D40020B439 /* myTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableViewHeaderView.h; sourceTree = "<group>"; };
 		65957D701BB248D40020B439 /* myTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableViewHeaderView.m; sourceTree = "<group>"; };
 		EFEA39681BAF8FC5004F29B8 /* NavTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +46,6 @@
 		EFEA39871BAF8FC5004F29B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFEA39901BAF8FC5004F29B8 /* NavTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavTestUITests.m; sourceTree = "<group>"; };
 		EFEA39921BAF8FC5004F29B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFEA399E1BAF9037004F29B8 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		EFEA39A01BAF9247004F29B8 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		EFEA39A11BAF9247004F29B8 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,9 +96,9 @@
 				EFEA39721BAF8FC5004F29B8 /* ViewController.m */,
 				EFEA39A01BAF9247004F29B8 /* HeaderView.h */,
 				EFEA39A11BAF9247004F29B8 /* HeaderView.m */,
+				656025081BB8D630001E0B88 /* View.xib */,
 				65957D6F1BB248D40020B439 /* myTableViewHeaderView.h */,
 				65957D701BB248D40020B439 /* myTableViewHeaderView.m */,
-				EFEA399E1BAF9037004F29B8 /* HeaderView.xib */,
 				EFEA39741BAF8FC5004F29B8 /* Main.storyboard */,
 				EFEA39771BAF8FC5004F29B8 /* Assets.xcassets */,
 				EFEA397C1BAF8FC5004F29B8 /* Info.plist */,
@@ -214,8 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEA39781BAF8FC5004F29B8 /* Assets.xcassets in Resources */,
+				656025091BB8D630001E0B88 /* View.xib in Resources */,
 				EFEA39761BAF8FC5004F29B8 /* Main.storyboard in Resources */,
-				EFEA399F1BAF9037004F29B8 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.XYZ..NavTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,7 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.XYZ..NavTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

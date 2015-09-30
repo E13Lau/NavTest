@@ -9,10 +9,9 @@
 #import "ViewController.h"
 #import "HeaderView.h"
 
-@interface ViewController () <UITableViewDataSource,UITableViewDelegate> {
+@interface ViewController () <UITableViewDataSource,UITableViewDelegate,UISearchControllerDelegate> {
     
     IBOutlet UITableView *myTableView;
-    HeaderView * myheaderView;
 }
 
 @end
@@ -24,6 +23,10 @@
     NSLog(@"viewDidLoad");
     myTableView.delegate = self;
     myTableView.dataSource = self;
+    
+    
+    HeaderView * headerView = [[HeaderView alloc]init];
+    myTableView.tableHeaderView = headerView;
 //
     myTableView.estimatedRowHeight = 100.f;
     myTableView.rowHeight = UITableViewAutomaticDimension;
@@ -110,14 +113,18 @@
     return cell;
 }
 
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    myheaderView = [[HeaderView alloc]init];
-    return myheaderView;
+-(void)willDismissSearchController:(UISearchController *)searchController {
+    NSLog(@"willDismiss");
 }
 
 //-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 //    return UITableViewAutomaticDimension;
 //}
 
+- (IBAction)barButtonAction:(id)sender {
+    UISearchController * controller = [[UISearchController alloc]initWithSearchResultsController:[[UITableViewController alloc]init]];
+    controller.delegate = self;
+    [self presentViewController:controller animated:YES completion:nil];
+}
 
 @end

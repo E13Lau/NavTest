@@ -21,7 +21,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // 初始化时加载collectionCell.xib文件
-        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:self options:nil];
+        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"View" owner:self options:nil];
         
         // 如果路径不存在，return nil
         if (arrayOfViews.count < 1)
@@ -37,6 +37,11 @@
         self = [arrayOfViews objectAtIndex:0];
     }
     return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    myLabel.preferredMaxLayoutWidth = myLabel.bounds.size.width;
 }
 
 @end

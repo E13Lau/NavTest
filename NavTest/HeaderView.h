@@ -14,7 +14,4 @@
 
 }
 
-@property (strong, nonatomic) IBOutlet UIView *view;
-
-
 @end
